@@ -3,10 +3,55 @@
     <head>
     </head>
         <body>
+
+            <div class="bigHeader">
+                <div class="headerOne">
+                <ul class="myList">
+                    <li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+                    <li><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+                </ul>
+                </div>
+                <div class="headerCenter"></div>
+                <div class="headerTwo">
+                <ul class="myListTwo">
+                    <li class="listBreak"><a href="www.gmail.com">Gmail</a></li>
+                    <li><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
+                    <li><a href="https://about.google/intl/en/products/">Apps</a></li>
+                    <li><label class="signInLabel" for="logIn"> <button class="signInButton" for="logIn">Sign in</button></label></li>
+                </ul>
+                </div>
+                <div class="helper"></div>
+                </div>
+            
+
             <div class="BiggestContainer">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+
+
+                    <img class="googlePic" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+                    <input class="searchInput" type="text" >
+
+                    <div class="buttonBox">
+                    <label class="firstButtonLabel" for="buttonOne">
+                    <button class="firstButton" name="buttonOne">Google Search</button>
+                     </label>
+
+                     <label class="secondButtonLabel" for="buttonTwo">
+                        <button class="secondButton" name="buttonTwo">I'm Feeling Lucky</button>
+                         </label>
+                    </div>
             </div>  
             <div class="bottom">
+                <div class="advert"><a href="https://ads.google.com/intl/en_us/home/">Advertising</a></div>
+                <div class="business"><a href="https://smallbusiness.withgoogle.com">Business</a></div>
+                <div class="how"><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a></div>
+                <div class="bottomCenter">
+                    <div class="littleLeaf"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="picture of a little leaf"></div>
+                    <div class="carbon"><a href="https://sustainability.google/commitments/">Carbon neutral since 2007</a></div>
+                </div>
+                
+                <div class="privacy"><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></div>
+                <div class="terms"><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></div>
+                <div class="settings"><a href="https://www.google.com/account/about/?hl=en">Settings</a></div>
 
             </div>
         </body>
@@ -16,23 +61,121 @@
 <style>
 
     body{
-        display:flex;
-        flex-direction:column;
         margin:0;
         padding:0;
     }
     
     .BiggestContainer{
         display:flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        background:blue;
-        height:80vh;
+        height:75vh;
+        width:100vw;
     }
+    .bigHeader{
+        display:flex;
+        align-items:center;
+        padding:5px;
+
+    }
+
+
+    .headerCenter{
+        position:inline-block;
+        flex-grow:1;
+        
+    }
+
+    ul{
+        display:inline;
+        list-style-type:none;
+        padding:0;
+    }
+
+    li{
+        display:inline;
+        position:relative;
+        margin:0px 10px
+    }
+    .searchInput{
+
+        margin-top:25px;
+        height:30px;
+        border-radius:4%;
+        width:40vw;        
+    }
+
+    .buttonBox{
+        display:flex;
+        margin-top:10px;
+
+        width:30vw;
+        
+    }
+
+    .secondButtonLabel{
+        margin-left:auto;
+
+    }
+
+    .firstButton .secondButton{
+        border-radius:10%;
+        height:25px;
+        width:10vw;
+
+    }
+
+    
 
     .bottom{
         display:flex;
+        align-items:flex-end;
+        justify-content:center;
         height:20vh;
-        background:green;
+        width:100vw;
     }
+
+    .privacy {
+        margin-left:auto;
+        padding:0px 20px;
+    }
+
+    .advert{
+        padding:0px 20px;
+    }
+
+    .business{
+        padding:0px 20px;
+    }
+
+    .how{
+        padding:0px 20px;
+    }
+    .terms{
+        padding:0px 20px;
+    }
+
+    .settings{
+        padding:0px 20px;
+    }
+
+    .bottomCenter{
+        display:flex;
+        position:fixed;
+
+        align-content:flex-end;
+        
+    }
+
+    .littleLeaf{
+        padding:0px 10px 0px 0px;
+    }
+
+    .carbon{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
 </style>
